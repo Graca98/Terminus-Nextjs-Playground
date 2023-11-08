@@ -1,8 +1,8 @@
 
 
-const CardImg = (props) => {
+const CardImg = ({imgSrc, alt}) => {
   return <>
-    <img src={props.imgSrc} className="h-72 max-h-64 w-28 max-w-xs" alt={props.alt}></img>
+    <img src={imgSrc} className="h-72 max-h-64 w-28 max-w-xs" alt={alt}></img>
   </>
 }
 

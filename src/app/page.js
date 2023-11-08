@@ -1,27 +1,10 @@
-import Image from 'next/image'
-import Testing from './components/Testing'
-import Card from './components/CardFolder/Card'
+import ATeamPage from "./components/ATeamPage"
 
 export default function Home() {
-  let src = "https://crafatar.com/renders/body/10db14fb-2492-48c2-85c0-c9f393d1987b?overlay=true"
-
+  
   return (
     <main>
-      <Card
-        name="Gracous"
-        description="Docela cool týpek.. fjdklsfjl lakfjldkafj alkdůfjl kfja lkasdjflksadf laskdfjlůksdf"
-        imgSrc={src}
-      ></Card>
-      <Card
-        name="Verunka"
-        description="Moje krásna holka <3"
-        imgSrc={src}
-      ></Card>
-      <Card
-        name="Gracous"
-        description="Docela cool týpek.. fjdklsfjl lakfjldkafj alkdůfjl kfja lkasdjflksadf laskdfjlůksdf"
-        imgSrc={src}
-      ></Card>
+      <ATeamPage></ATeamPage>
     </main>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
