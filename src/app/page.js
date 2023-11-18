@@ -1,10 +1,16 @@
 import ATeamPage from "./components/ATeamPage"
+import MainPage from "./components/Hlavni-stranka/MainPage";
+
 
 export default function Home() {
-  
+
   return (
     <main>
-      <ATeamPage></ATeamPage>
+      <h1 className="py-6 px-4 bg-gray-700 text-white font-bold text-xl">Navigace na později</h1>
+      <div className="myBackround">
+        <MainPage></MainPage>
+      </div>
+      {/* <ATeamPage></ATeamPage> */}
     </main>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
