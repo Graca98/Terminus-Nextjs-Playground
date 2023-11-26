@@ -1,5 +1,5 @@
-import LinkHover from "./LinkHover";
-import DarkOutlineButton from "../DarkOutlineButton";
+// import LinkHover from "./LinkHover";
+// import DarkOutlineButton from "../DarkOutlineButton";
 
 const Informace = () => {
 
@@ -26,45 +26,7 @@ const Informace = () => {
               děním. Toto vše se odehrává na operačním systému Alpine Linux, který
               je znám svou vysokou bezpečností a nízkou náročností.
             </p>
-            <ul className="list-none">
-              <li>
-                Jak se připojit a hrát?
-                <a href="servers/index.php">
-                  <LinkHover text="Jednoduše"></LinkHover>
-                </a>
-              </li>
 
-              <li>
-                Chceš si prohlédnou náš admin team?
-                <a href="ateam/index.php">
-                  <LinkHover text="Zde"></LinkHover>
-                </a>
-              </li>
-
-              <li>
-                Máš zájem nás podpořit v tom, co děláme?
-                <a href="https://store.tcraft.eu/" target="”_blank”">
-                  <LinkHover text="Tady"></LinkHover>
-                </a>
-              </li>
-
-              <li>
-                Nebo se k nám připojit na discord a pokecat?
-                <a href="https://discord.gg/FxsVHJP" target="”_blank”">
-                  <LinkHover text="Bez problému"></LinkHover>
-                </a>
-              </li>
-
-              <li>
-                Líbí se ti náš server a chceš, aby se o něm dozvědělo více lidí?
-                <a
-                  href="https://czech-craft.eu/server/terminuscraft/"
-                  target="_blank"
-                >
-                  <LinkHover text="Hlasuj"></LinkHover>
-                </a>
-              </li>
-            </ul>
           </article>
 
           <article className="mb-12">
@@ -81,13 +43,11 @@ const Informace = () => {
             <h4>Na všechny naše servery se připojíte z jedné IP:</h4>
             <p className="pb-2 me-1">
               Minecraft:
-              <DarkOutlineButton text="play.tcraft.eu" handleClick="" style="py-1.5 px-3 ms-1"></DarkOutlineButton>
+
             </p>
             <p>
               Discord:
-              <a href="http://discord.gg/FxsVHJP" target="”_blank”">
-                <LinkHover text="Terminus Craft"></LinkHover>
-              </a>
+
             </p>
           </article>
 

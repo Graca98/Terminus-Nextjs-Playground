@@ -1,14 +1,14 @@
-import ATeamPage from "./components/ATeamPage"
-import MainPage from "./components/Hlavni-stranka/MainPage";
+
+import Informace from "./components/Hlavni-stranka/Informace";
 
 
 export default function Home() {
 
   return (
     <main>
-      <h1 className="py-6 px-4 bg-gray-700 text-white font-bold text-xl">Navigace na později</h1>
+
       <div className="myBackround">
-        <MainPage></MainPage>
+        <Informace></Informace>
       </div>
       {/* <ATeamPage></ATeamPage> */}
     </main>

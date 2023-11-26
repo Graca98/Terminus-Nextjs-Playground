@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LinkHover from "./LinkHover";
+import LinkHover from "../LinkHover";
 import rulesIcon from "@/app/img/rulesIco.png"
 import sfIcon from "@/app/img/sFIco.png"
 
@@ -32,7 +32,7 @@ const Download = () => {
           <a href="download/Slimefun_Texture_v3.1.1.zip" target="_blank">
             {/* Doplnit link!! */}
             <li className="inline-block bg-yellow-500 p-5 rounded-full img-hover hover:rotate-45">
-              <Image src={sfIcon} width={50} height={50} alt="Texturepack ke stažení"></Image>
+              <Image src={sfIcon} alt="Texturepack ke stažení"></Image>
             </li>
           </a>
         </ul>
@@ -45,7 +45,7 @@ const Download = () => {
           <a href="download/tcraft_pravidla.pdf" target="_blank">
             {/* Doplnit link!! */}
             <li className="inline-block bg-yellow-500 p-5 rounded-full img-hover hover:rotate-45">
-              <Image src={rulesIcon} width={50} height={50} alt="Pravidla ke stažení"></Image>
+              <Image src={rulesIcon} alt="Pravidla ke stažení"></Image>
             </li>
           </a>
         </ul>

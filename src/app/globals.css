@@ -7,27 +7,30 @@
     @apply transition ease-in-out duration-300 hover:scale-110;
   }
   .container-fluid {
-    @apply max-w-screen-2xl mx-auto;
+    @apply max-w-screen-2xl mx-auto p-6 md:p-16;
+  }
+  .myBackround {
+    @apply text-black;
   }
 }
 
-/* :root {
+:root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-} */
+}
 
-/** Zapne tmavý režim
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground-rgb);
+  color: white;
 
   background-position: center top;
   background-image: url(./img/background.png);
@@ -36,7 +39,6 @@ body {
   background-size: cover;
   /* font-family: Calibri; */
   /* font-size: 18px; */
-  /* color: white; */
 
   /* height: 100vh; */
 }
@@ -50,3 +52,18 @@ body {
   flex: 1; /* Add this line to make the content stretch to fill the available space */
   min-height: calc(100vh - 160px);
 }
+.backroundGradient {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(240, 255, 255, 1) 2%,
+    rgba(240, 255, 255, 0) 140%
+  );
+}
+
+/* .navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding, 0.5rem);
+  min-height: 4rem;
+  width: 100%;
+} */

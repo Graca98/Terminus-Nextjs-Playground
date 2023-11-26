@@ -135,12 +135,25 @@ const Pravidla = () => {
 
         <article className="mb-12">
           <h3 className="text-xl font-medium mb-1">Plné znění</h3>
+
+          {/* <h3 className="text-xl font-medium mb-4">Plné znění</h3>
+          <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-transparent mb-4">
+            <div className="collapse-title text-lg font-medium flex py-1 items-center">
+              Pravidla
+            </div>
+            <div className="collapse-content">
+              <p>
+                Text na později
+              </p>
+            </div>
+          </div> */}
+
           <p className="mb-5">Plné znění pravidel v platnosti od 14.4.2020 ke stažení zde:</p>
           <ul className="ps-8">
             <a href="download/tcraft_pravidla.pdf" target="_blank">
               {/* Doplnit link!! */}
               <li className="inline-block bg-yellow-500 p-5 rounded-full img-hover hover:rotate-45">
-                <Image src={rulesIcon} width={50} height={50} alt="Pravidla ke stažení"></Image>
+                <Image src={rulesIcon} alt="Pravidla ke stažení"></Image>
               </li>
             </a>
           </ul>

@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useEffect } from "react"
-import Card from './CardFolder/Card'
-import aTeam from "../../data/aTeam.js"
+import Card from '../app/components/CardFolder/Card'
+import aTeam from "../data/aTeam.js"
+import React from 'react';
 
 const ATeamPage = () => {
   const baseUrl = "https://crafatar.com/renders/body/"

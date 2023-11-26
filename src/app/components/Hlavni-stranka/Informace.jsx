@@ -1,4 +1,4 @@
-import LinkHover from "./LinkHover";
+import LinkHover from "../LinkHover";
 import DarkOutlineButton from "../DarkOutlineButton";
 
 const Informace = () => {
@@ -78,10 +78,12 @@ const Informace = () => {
             omezen výkon, ale ani hráčův pocit z hraní.
           </p>
           <h4>Na všechny naše servery se připojíte z jedné IP:</h4>
-          <p className="pb-2 me-1">
+          <div className="pb-2 me-1">
             Minecraft:
-            <DarkOutlineButton text="play.tcraft.eu" handleClick="" style="py-1.5 px-3 ms-1"></DarkOutlineButton>
-          </p>
+            <div className="lg:tooltip lg:tooltip-right lg:tooltip-info" data-tip="Klikni pro zkopírování do schránky">
+              <DarkOutlineButton text="play.tcraft.eu" handleClick="" style="py-1.5 px-3 ms-1 transition ease-in-out duration-300 active:bg-gray-800 active:transition active:ease-out active:duration-200"></DarkOutlineButton>
+            </div>
+          </div>
           <p>
             Discord:
             <a href="http://discord.gg/FxsVHJP" target="”_blank”">
