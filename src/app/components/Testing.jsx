@@ -10,7 +10,7 @@ export default function Testing() {
   const [toast, setToast] = useState("")
 
   const handleClick = () => {
-    setToast(<ToastWarning text="Tak hlavně nečum brácho!" />)
+    setToast(<ToastWarning text="Tak hlavně nečum brácho!!" />)
     setTimeout(() => {
       setToast("")
     }, 2000)
