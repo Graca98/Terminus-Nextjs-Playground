@@ -4,9 +4,7 @@ export default function Page() {
 
   return (
     <main>
-      <div className="myBackround">
-        <Informace></Informace>
-      </div>
+      <Informace></Informace>
     </main>
   );
 }

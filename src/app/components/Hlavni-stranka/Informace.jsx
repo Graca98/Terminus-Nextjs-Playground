@@ -1,5 +1,5 @@
 import LinkHover from "../LinkHover";
-import DarkOutlineButton from "../DarkOutlineButton";
+import CopyButton from "../CopyButton";
 
 const Informace = () => {
 
@@ -80,8 +80,8 @@ const Informace = () => {
           <h4>Na všechny naše servery se připojíte z jedné IP:</h4>
           <div className="pb-2 me-1">
             Minecraft:
-            <div className="lg:tooltip lg:tooltip-right lg:tooltip-info" data-tip="Klikni pro zkopírování do schránky">
-              <DarkOutlineButton text="play.tcraft.eu" handleClick="" style="py-1.5 px-3 ms-1 transition ease-in-out duration-300 active:bg-gray-800 active:transition active:ease-out active:duration-200"></DarkOutlineButton>
+            <div className="lg:tooltip lg:tooltip-right" data-tip="Klikni pro zkopírování do schránky">
+              <CopyButton text="play.tcraft.eu" handleClick="" style="py-1.5 px-3 ms-1 transition ease-in-out duration-300 active:bg-gray-800 active:transition active:ease-out active:duration-200"></CopyButton>
             </div>
           </div>
           <p>
@@ -137,6 +137,7 @@ const Informace = () => {
         </article>
       </section>
     </div>
+
   );
 };
 

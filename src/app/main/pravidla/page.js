@@ -4,9 +4,7 @@ export default function Page() {
 
   return (
     <main>
-      <div className="myBackround">
-        <Pravidla></Pravidla>
-      </div>
+      <Pravidla></Pravidla>
     </main>
   );
 }

@@ -4,6 +4,14 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
 import HeaderImg from "@/app/img/header.png"
+import HlavniDropdown from './dropdowns/HlavniDropdown';
+import FlowbiteDropdown from "./FlowbiteDropdown";
+
+//! Smazat pozdějí
+import ToastCopy from './Toasts/ToastCopy';
+import ToastSuccess from './Toasts/ToastSuccess';
+import ToastWarning from './Toasts/ToastWarning';
+import ToastError from './Toasts/ToastError';
 
 const Navbar = ({ content }) => {
   const [isOpen, setOpen] = useState(false);
@@ -19,6 +27,11 @@ const Navbar = ({ content }) => {
   // -----
 
   return <>
+    {/* <ToastCopy text="Nějaký random text" /> */}
+    {/* <ToastWarning text="Nějaký random text" /> */}
+    {/* <ToastError text="Nějaký random text" /> */}
+    <ToastSuccess text="Úspěšně přihlášený" />
+
     <Link href="/" className="flex px-4 py-2">
       <Image src={HeaderImg} className='w-1/2 h-auto' alt='Terminus logo'></Image>
     </Link>
@@ -32,7 +45,7 @@ const Navbar = ({ content }) => {
       />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="sticky inset-x-0 top-0 w-full bg-base-300 flex">
+        <div className="sticky inset-x-0 top-0 w-full bg-base-300 flex z-30">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost ms-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
@@ -46,11 +59,16 @@ const Navbar = ({ content }) => {
               {/* Navbar menu content here */}
               <li><Link href="/">Informace</Link></li>
               <li><Link href="/main/pravidla">Pravidla</Link></li>
+              <li><Link href="/vip/skyblock">VIP</Link></li>
 
               {/* Test */}
+              <HlavniDropdown></HlavniDropdown>
+              <FlowbiteDropdown></FlowbiteDropdown>
+
               <div className="dropdown dropdown-hover group">
                 <label tabIndex={0} className="menu menu-horizontal flex">
                   Hlavní stránka
+
                   {/* hamburger icon */}
                   <svg
                     className="group-hover:hidden fill-current h-5 w-5"
@@ -68,16 +86,20 @@ const Navbar = ({ content }) => {
                   >
                     <path d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z"></path>
                   </svg>
+
                 </label>
                 <ul
                   tabIndex={0}
                   className="dropdown-content z-[1] menu p-2 shadow bg-base-300 rounded-md w-52"
                 >
                   <li>
-                    <a>Informace</a>
+                    <Link href="/">Informace</Link>
                   </li>
                   <li>
-                    <a>Pravidla</a>
+                    <Link href="/main/pravidla">Pravidla</Link>
+                  </li>
+                  <li>
+                    <Link href="/main/download">Ke stažení</Link>
                   </li>
                 </ul>
               </div>
@@ -86,21 +108,31 @@ const Navbar = ({ content }) => {
           </div>
           {/* <div className="flex-1 px-2 mx-2">Navbar Title</div> */}
         </div>
+
+
         {/* Page content here */}
-        {content}
+        <div className='myBackround'>
+          {content}
+        </div>
+
+
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side z-50">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay" ></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-300">
 
           {/* Sidebar content here */}
           <ul className="menu bg-base-300 w-full rounded-box">
             <li>
-              <span className="menu-dropdown-toggle menu-dropdown-show">Hlavní stránka</span>
+              <span className="menu-dropdown-toggle menu-dropdown-show">
+                <Link href="/" onClick={closeDrawer}>Hlavní stránka</Link>
+              </span>
+
               <ul className="menu-dropdown menu-dropdown-show">
                 <li><Link href="/" onClick={closeDrawer}>Informace</Link></li>
                 <li><Link href="/main/pravidla" onClick={closeDrawer}>Pravidla</Link></li>
               </ul>
+
             </li>
             <li><a>Store</a></li>
           </ul>

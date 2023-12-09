@@ -17,8 +17,8 @@ const Download = () => {
         <p className="text-lg">Navod k instalaci (aktuálně na verzi 1.18.1):</p>
         <ol className="list-decimal ps-8 mb-5">
           <li>
-            Nejprve nainstalujte <a href="https://optifine.net/downloads" target="_blank">
-              <LinkHover text="Optifine"></LinkHover>
+            Nejprve nainstalujte <a href="https://optifine.net/downloads" className="link link-primary underline underline-offset-4" target="_blank">
+              Optifine
             </a> na Vaši verzi Minecraftu.
           </li>
           <li>

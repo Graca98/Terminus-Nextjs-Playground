@@ -1,9 +1,28 @@
+'use client'
+
+import FlowbiteDropdown from "./FlowbiteDropdown";
+import ToastWarning from "./Toasts/ToastWarning";
+import { useState } from "react";
+
 export default function Testing() {
 
   //todo Nastavit Navbavu responsivitu při menším rozbrazení
+  const [toast, setToast] = useState("")
+
+  const handleClick = () => {
+    setToast(<ToastWarning text="Tak hlavně nečum brácho!" />)
+    setTimeout(() => {
+      setToast("")
+    }, 2000)
+  }
 
   return (
     <>
+      <button onClick={handleClick}>Ukaž Toast</button>
+      {toast}
+      <FlowbiteDropdown></FlowbiteDropdown>
+
+
       <div className="navbar bg-base-100">
         <div className="">
           <div className="dropdown">

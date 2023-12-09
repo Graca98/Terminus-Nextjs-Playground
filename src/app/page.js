@@ -6,10 +6,7 @@ export default function Home() {
 
   return (
     <main>
-
-      <div className="myBackround">
-        <Informace></Informace>
-      </div>
+      <Informace></Informace>
       {/* <ATeamPage></ATeamPage> */}
     </main>
 

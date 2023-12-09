@@ -7,6 +7,8 @@ import HoverPopover from './components/popovers/HoverPopover'
 import Dropdown from './components/dropdowns/Dropdown'
 
 import Testing from './components/Testing'
+
+
 import Navbar from './components/Navbar'
 
 
@@ -24,6 +26,15 @@ export default function RootLayout({ children }) {
 
         <section>
           <Navbar content={children}></Navbar>
+
+
+
+
+
+
+
+
+          {/*                Testování                   */}
           <Testing></Testing>
 
           {/* Navigace (sdílená)*/}
@@ -59,8 +70,10 @@ export default function RootLayout({ children }) {
           </nav>
 
           {/* Obsah stránek */}
-          {children}
+          {/* {children} */}
         </section>
+
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </body>
     </html>
   );

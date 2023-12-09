@@ -7,8 +7,7 @@ const LinkHover = ({ text }) => {
   return (
     <>
       <span
-        className={`mx-1 text-blue-500 underline underline-offset-4 ${isHovered ? "text-blue-600" : ""
-          }`}
+        className={`mx-1 link link-primary underline underline-offset-4`}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >{text}</span>
